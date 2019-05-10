@@ -1,0 +1,8 @@
+.CodeMirror {
+    border: 0px solid black; 
+    font-size:13px;
+}
+
+#codeMirrorDiv, #codeMirrorControlDiv{
+    background-color: #272822;
+}

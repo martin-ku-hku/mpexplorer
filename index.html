@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <style type="text/css">.blocklySvg{background-color: #4B9FE1 !important; width: 100% !important;}</style>
+    <style type="text/css">.blocklyToolboxDiv{background-color: #ffffff !important; width: 100% !important;}</style>
+    <style type="text/css">.blocklyHorizontalTree{padding-left: 0px !important;}</style>
+    <style type="text/css">.blocklyTreeSeparatorHorizontal{border-left: 1px solid rgb(255, 255, 255) !important;}</style>
+    <style type="text/css">.injectionDiv{height: 100%;}</style>
+    <link rel="stylesheet" type="text/css" href="css/blockly-demo.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="run_prettify.js"></script>
+    <xml id="toolbox" style="display: none">
+      <category name="Logic" colour="%{BKY_LOGIC_HUE}">
+        <block type="controls_if"></block>
+        <block type="logic_compare"></block>
+        <block type="logic_operation"></block>
+        <block type="logic_negate"></block>
+        <block type="logic_boolean"></block>
+        <block type="logic_ternary"></block>
+      </category>
+      <sep></sep>
+      <category name="Loop" colour="%{BKY_LOOPS_HUE}">
+        <block type="controls_repeat_ext">
+          <value name="TIMES">
+            <shadow type="math_number">
+              <field name="NUM">10</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="controls_whileUntil">
+          <value name="BOOL">
+            <shadow type="logic_boolean"></shadow>
+          </value>
+        </block>
+        <block type="controls_for">
+          <value name="FROM">
+            <shadow type="math_number">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+          <value name="TO">
+            <shadow type="math_number">
+              <field name="NUM">10</field>
+            </shadow>
+          </value>
+          <value name="BY">
+            <shadow type="math_number">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="controls_forEach"></block>
+        <block type="controls_flow_statements"></block>
+        <block type="sleep">
+          <value name="time_in_ms">
+            <shadow type="math_number">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="sleep_in_ms">
+          <value name="time_in_ms">
+            <shadow type="math_number">
+              <field name="NUM">100</field>
+            </shadow>
+          </value>
+        </block>
+      </category>
+      <sep></sep>
+      <category name="Math" colour="%{BKY_MATH_HUE}">
+        <block type="math_number" gap="32">
+          <field name="NUM">123</field>
+        </block>
+        <block type="math_arithmetic">
+          <value name="A">
+            <shadow type="math_number">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+          <value name="B">
+            <shadow type="math_number">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="math_single">
+          <value name="NUM">
+            <shadow type="math_number">
+              <field name="NUM">9</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="math_change">
+          <value name="DELTA">
+            <shadow type="math_number">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="math_trig">
+          <value name="NUM">
+            <shadow type="math_number">
+              <field name="NUM">45</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="expo">
+          <value name="base">
+            <shadow type="math_number">
+              <field name="NUM">3</field>
+            </shadow>
+          </value>
+          <value name="power">
+            <shadow type="math_number">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="log">
+          <value name="val">
+            <shadow type="math_number">
+              <field name="NUM">3</field>
+            </shadow>
+          </value>
+          <value name="base">
+            <shadow type="math_number">
+              <field name="NUM">10</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="math_constant"></block>
+        <block type="math_number_property">
+          <value name="NUMBER_TO_CHECK">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="math_round">
+          <value name="NUM">
+            <shadow type="math_number">
+              <field name="NUM">3.1</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="math_on_list"></block>
+        <block type="math_modulo">
+          <value name="DIVIDEND">
+            <shadow type="math_number">
+              <field name="NUM">64</field>
+            </shadow>
+          </value>
+          <value name="DIVISOR">
+            <shadow type="math_number">
+              <field name="NUM">10</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="math_constrain">
+          <value name="VALUE">
+            <shadow type="math_number">
+              <field name="NUM">50</field>
+            </shadow>
+          </value>
+          <value name="LOW">
+            <shadow type="math_number">
+              <field name="NUM">1     </field>
+            </shadow>
+          </value>
+          <value name="HIGH">
+            <shadow type="math_number">
+              <field name="NUM">100                 </field>
+            </shadow>
+          </value>
+        </block>
+        <block type="text_to_int">
+          <value name="text">
+            <shadow type="text">
+              <field name="TEXT">12</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="text_to_float">
+          <value name="text">
+            <shadow type="text">
+              <field name="TEXT">0.5</field>
+            </shadow>
+          </value>
+        </block>
+      </category>
+      <sep></sep>
+      <category name="Text" colour="%{BKY_TEXTS_HUE}">
+        <block type="text"></block>
+        <block type="text_join"></block>
+        <block type="text_append">
+          <value name="TEXT">
+            <shadow type="text"></shadow>
+          </value>
+        </block>
+        <block type="text_length">
+          <value name="VALUE">
+            <shadow type="text">
+              <field name="TEXT">abc</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="text_isEmpty">
+          <value name="VALUE">
+            <shadow type="text">
+              <field name="TEXT"></field>
+            </shadow>
+          </value>
+        </block>
+        <block type="text_indexOf">
+          <value name="VALUE">
+            <block type="variables_get">
+              <field name="VAR">text</field>
+            </block>
+          </value>
+          <value name="FIND">
+            <shadow type="text">
+              <field name="TEXT">abc</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="text_charAt">
+          <value name="VALUE">
+            <block type="variables_get">
+              <field name="VAR">text</field>
+            </block>
+          </value>
+        </block>
+        <block type="text_getSubstring">
+          <value name="STRING">
+            <block type="variables_get">
+              <field name="VAR">text</field>
+            </block>
+          </value>
+        </block>
+        <block type="text_changeCase">
+          <value name="TEXT">
+            <shadow type="text">
+              <field name="TEXT">abc</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="text_trim">
+          <value name="TEXT">
+            <shadow type="text">
+              <field name="TEXT">abc</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="text_count">
+          <value name="SUB">
+            <shadow type="text"></shadow>
+          </value>
+          <value name="TEXT">
+            <shadow type="text"></shadow>
+          </value>
+        </block>
+        <block type="text_replace">
+          <value name="FROM">
+            <shadow type="text"></shadow>
+          </value>
+          <value name="TO">
+            <shadow type="text"></shadow>
+          </value>
+          <value name="TEXT">
+            <shadow type="text"></shadow>
+          </value>
+        </block>
+        <block type="text_reverse">
+          <value name="TEXT">
+            <shadow type="text"></shadow>
+          </value>
+        </block>
+        <label text="Input/Output:" web-class="ioLabel"></label>
+        <block type="text_print">
+          <value name="TEXT">
+            <shadow type="text">
+              <field name="TEXT">abc</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="text_prompt_ext">
+          <value name="TEXT">
+            <shadow type="text">
+              <field name="TEXT">abc</field>
+            </shadow>
+          </value>
+        </block>
+      </category>
+      <sep></sep>
+      <category name="Lists" colour="%{BKY_LISTS_HUE}">
+        <block type="lists_create_with">
+          <mutation items="0">       </mutation>
+        </block>
+        <block type="lists_create_with"></block>
+        <block type="lists_repeat">
+          <value name="NUM">
+            <shadow type="math_number">
+              <field name="NUM">5</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="lists_length"></block>
+        <block type="lists_isEmpty"></block>
+        <block type="lists_indexOf">
+          <value name="VALUE">
+            <block type="variables_get">
+              <field name="VAR">list</field>
+            </block>
+          </value>
+        </block>
+        <block type="lists_getIndex">
+          <value name="VALUE">
+            <block type="variables_get">
+              <field name="VAR">list</field>
+            </block>
+          </value>
+        </block>
+        <block type="lists_setIndex">
+          <value name="LIST">
+            <block type="variables_get">
+              <field name="VAR">list</field>
+            </block>
+          </value>
+        </block>
+        <block type="lists_getSublist">
+          <value name="LIST">
+            <block type="variables_get">
+              <field name="VAR">list</field>
+            </block>
+          </value>
+        </block>
+        <block type="lists_split">
+          <value name="DELIM">
+            <shadow type="text">
+              <field name="TEXT">,</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="lists_sort"></block>
+        <block type="lists_reverse"></block>
+      </category>
+      <sep></sep>
+      <category name="Variables" colour="%{BKY_VARIABLES_HUE}" custom="VARIABLE"></category>
+      <sep></sep>
+      <category name="Functions" colour="%{BKY_PROCEDURES_HUE}" custom="PROCEDURE"></category>
+      <sep></sep>
+      <category name="Pins" colour="345">
+        <block type="create_digital_out">
+          <value name="pinnumber">
+            <shadow type="math_number">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="digital_read_pin"></block>
+        <block type="digital_write_pin"></block>
+        <block type="create_adc"></block>
+        <block type="read_adc"></block>
+        <block type="create_pwm_pin">
+          <value name="pinnumber">
+            <shadow type="math_number">
+              <field name="NUM">2</field>
+            </shadow>
+          </value>
+          <value name="freq">
+            <shadow type="math_number">
+              <field name="NUM">50</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="analog_write">
+          <value name="duty">
+            <shadow type="math_number">
+              <field name="NUM">512</field>
+            </shadow>
+          </value>
+        </block>
+      </category>
+    </xml>
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+    <script src="scripts/jquery.min.js"></script>
+    <script>if (window.module) module = window.module;</script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/bootbox.js"></script>
+    <script src="scripts/FileSaver.js"></script>
+    <script src="blockly_compressed.js"></script>
+    <script src="blocks_compressed.js"></script>
+    <script src="python_compressed.js"></script>
+    <script src="msg/js/en.js"></script>
+    <script src="scripts/term.js"></script>
+    <script src="scripts/FileSaver.js"></script>
+  </head>
+  <body>
+    <div class="app-container">
+      <div id="controlDiv">
+        <link rel="stylesheet" type="text/css" href="css/controls.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <div id="control-panel">
+          <div id="left-control">
+            <dic class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownfilemenubtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-folder-open"><span class="btntext">  File </span><span class="caret"></span></i></button>
+              <ui class="dropdown-menu" aria-labelledby="dropdownfilemenubtn">
+                <li><a class="dropdown-item" onclick="open_file_list('new')">New</a></li>
+                <li><a class="dropdown-item" onclick="open_file_list('open')">Open</a></li>
+                <li><a class="dropdown-item" onclick="open_file_list('open_example')">Open Example</a></li>
+                <li id="import-btn-li"><a class="dropdown-item" onclick="import_external()">Import</a>
+                  <input type="file" id="import_proj_file" style="display: none;">
+                </li>
+                <li>                           <a class="dropdown-item" onclick="export_file()">Save</a></li>
+                <li>                           <a class="dropdown-item" id="sharebtn" onclick="share_file()"><span id="share-btn-text">  Share</span></a></li>
+                <li id="delete-btn-li">                           <a class="dropdown-item" id="deletebtn" onclick="delete_file()"><span id="share-btn-text">  Delete</span></a></li>
+              </ui>
+              <button class="btn btn-default" id="action-btn" data-toggle="modal" data-target="#action_model"><i class="fa fa-cog"><span class="btntext">  Wifi</span></i></button>
+            </dic>
+          </div>
+          <div id="center-control">
+            <button class="btn btn-success gradient" id="promodebtn" onclick="toggleEditorWithButton()"><i class="fa fa-keyboard-o"><span class="btntext" id="editorbtntext">  Python</span></i></button>
+            <button class="btn btn-default" id="blocktopybtn" onclick="enableEditing()"><i class="fa fa-file-code-o"><span class="btntext" id="synceditorbtntext">  Stop sync</span></i></button>
+          </div>
+          <div id="right-control">
+            <button class="btn btn-default" id="connect_button" onclick="button_click()"><i class="fa fa-terminal" id="runbtnicon"><span class="btntext">  Run</span></i></button>
+            <button class="btn btn-default" id="uploadcodebtn" onclick="upload_code_to_device()"><i class="fa fa-arrow-circle-up"> <span class="btntext">  Upload</span></i></button>
+          </div>
+          <div class="modal fade" id="action_model" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button class="close" type="button" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Wifi</h4>
+                </div>
+                <div class="modal-body" style="overflow: auto;">
+                  <div style="display:none">
+                    <label class="switch">
+                      <input type="checkbox" id="editorcheckbox" onclick="toggleEditor()"><span class="slider round"></span>
+                    </label>
+                  </div>
+                  <h4 id="current_device_identity"></h4>
+                  <select id="devicemenu"></select>
+                  <button class="btn btn-warning" onclick="load_device_profile($('#devicemenu').val())">Use</button>
+                  <button class="btn btn-danger" onclick="remove_device_profile($('#devicemenu').val())">Remove</button>
+                  <hr><br>
+                  <p>
+                     You may need to read <a href="https://blog.gpio.cc/setup-wifi-and-webrepl-in-micropython-on-esp8266/" target="_blank">this guide </a>for setting up Wifi and WebREPL on ESP8266 running MicroPython.</p>
+                  <p>
+                     If you know the IP address of the board, click  
+                    <button class="btn btn-info" onclick="load_test_device()">Add IP</button> to create a new profile.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="runningModal" role="dialog" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog" id="runningDiv">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">The code is now running</h4>
+                  <button class="btn btn-warning" type="button" data-dismiss="modal" onclick="button_click()"><i class="fa fa-exclamation-triangle"><span class="btntext"> Stop</span></i></button>
+                  <button class="btn btn-danger" id="keyboard-interrupt-btn" onclick="keyboard_interrupt()"><i class="fa fa-times-circle-o"><span class="btntext"> Ctrl + C</span></i></button>
+                  <button class="btn btn-danger" id="reset-btn" onclick="reloadapp()"><i class="fa fa-refresh"><span class="btntext"> Reload all</span></i></button>
+                </div>
+                <div class="modal-body">
+                  <div id="runningBody">
+                    <div id="term"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main blockly-panel" id="blocklyDiv">
+        <div id="codeMirrorDiv">
+          <link rel="stylesheet" href="css/cm_div.css">
+          <link rel="stylesheet" href="codemirror/lib/codemirror.css">
+          <link rel="stylesheet" href="codemirror/lib/custom.css">
+          <link rel="stylesheet" href="codemirror/theme/monokai.css">
+          <script src="codemirror/lib/codemirror.js"></script>
+          <script src="codemirror/mode/python/python.js"></script>
+          <script src="codemirror/addon/selection/active-line.js"></script>
+          <script src="codemirror/addon/edit/matchbrackets.js"></script>
+          <article>
+            <form>
+              <textarea id="code" name="code"></textarea>
+            </form>
+            <script src="scripts/load_cm.js"></script>
+          </article>
+        </div>
+        <div id="blocklyInDiv"></div>
+      </div>
+      <div class="main output-panel" id="codeDiv" style="display: none;">
+        <link rel="stylesheet" href="css/term.css">
+        <div id="term-control"></div>
+        <link rel="stylesheet" type="text/css" href="css/devsite-cyan_test.css">
+        <pre></pre>
+      </div>
+    </div>
+    <script src="scripts/blockly_extension.js"></script>
+    <script src="scripts/pins.js"></script>
+    <script src="scripts/example_projects.js"></script>
+    <script src="scripts/local_storage.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/add_by_ip.js"></script>
+  </body>
+</html>

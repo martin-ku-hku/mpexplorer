@@ -1,0 +1,261 @@
+/* @import url("https://fonts.googleapis.com/icon?family=Material+Icons"); */
+
+.btn{
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.safari-code{
+  white-space: nowrap;
+  overflow: auto;
+  word-wrap: normal;
+  height: 70vh;
+  top: 30px !important;
+}
+
+.app-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: visible;
+  /* background-color: #0097a7; */
+  /* background-color: #b6df1f; */
+  background-color: #28559A;
+  box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+  margin: 10px;
+  border-radius: 15px !important;
+}
+
+.main {
+  position: absolute;
+  /* top: 8px; */
+  /* bottom: 8px; */
+  top: 8%;
+  height: 90%;
+}
+
+.blockly-panel {
+  
+  left: 8px;
+  /* right: 298px; */
+  /* background-color: #d1e0e0; */
+  background-color: #28559A;
+  /* right: 396px; */
+  /* width: 98%; */
+  /* right: 388px; */
+  right: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.37);
+  height: 90%;
+}
+
+#blocklyInDiv{
+  height: 100%;
+  width: 100%;
+}
+
+.output-panel {
+  right: 8px;
+  /* width: 282px; */
+  width: 380px;
+  background-color: #f7f7f7;
+  /* overflow: scroll; */
+  overflow: hidden;
+  padding: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.37);
+}
+
+#control-panel{
+  margin: auto;
+  width: 100%;
+}
+
+#left-control{
+  float: left;
+  width: 35%;
+}
+
+#file-name-text{
+  display : inline-block;
+  color: white;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  white-space : nowrap;
+  width : 250px;
+  vertical-align: -webkit-baseline-middle;
+}
+
+
+#center-control{
+  float: left;
+  width: 30%;
+  margin: 0 auto;
+  right: 30%;
+  text-align: center;
+}
+
+#right-control{
+  float: right;
+  width: 25%;
+  text-align: right;
+}
+
+
+
+.btntext{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropdown-item{
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 2px;
+}
+
+.dropdown-bar {
+  display: block;
+  font-family: sans-serif;
+  font-size: 16px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#languageDropdown {
+  border: 0;
+  background-color: transparent;
+  font-size: 16px;
+  outline: none;
+}
+
+#im-just-an-underline {
+  border-bottom: 1px solid;
+  display: inline;
+  padding-right: 5px;
+}
+
+.POps {
+  height: 1px;
+  border: 0;
+  background-color: rgba(0,0,0,.2);
+}
+
+.play-button {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  border-radius: 100%;
+  color: white;
+  width: 56px;
+  height: 56px;
+  line-height: 56px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.37);
+  transition: box-shadow .3s ease-in-out;
+  text-align: center;
+  font-weight: 500;
+  background-color: #0097A7;
+  cursor: pointer;
+}
+
+#runningDiv{
+  width: 80%;
+  /* height: 768px; */
+  overflow: auto;
+}
+
+#runningBody{
+  height: 70vh;
+  overflow: auto;
+}
+
+.play-button:hover {
+  box-shadow: 0 2px 2px rgba(0,0,0,.2),0 6px 10px rgba(0,0,0,.3);
+  transition: box-shadow .3s ease-in-out;
+}
+
+.but-not-that-pretty {
+  border: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.blocklyTreeLabel{
+  /* background-color: aqua; */
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+pre{
+  word-wrap: normal;
+}
+
+pre{
+  word-wrap: normal;
+}
+
+pre::before{
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+pre::after{
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+pre::-webkit-scrollbar{
+  height: 8px;
+  width: 4px;
+}
+
+pre::-webkit-scrollbar-corner{
+  background: 0;
+}
+
+pre::-webkit-scrollbar-thumb{
+  background: rgba(0, 0, 0, .26);
+}
+
+.btn{
+  border-radius: 24px !important;
+}
+
+.btn.gradient {
+  border-radius: 24px;
+	background: -moz-linear-gradient(top,  #33a6cc 50%, #0099cc 50%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#33a6cc), color-stop(50%,#0099cc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #33a6cc 50%,#0099cc 50%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #33a6cc 50%,#0099cc 50%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #33a6cc 50%,#0099cc 50%); /* IE10+ */
+	background: linear-gradient(to bottom,  #33a6cc 50%,#0099cc 50%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33a6cc', endColorstr='#0099cc',GradientType=0 ); /* IE6-9 */
+}
+
+.btn.gradient:hover, .btn-primary.gradient:focus, .btn-primary.gradient:active, .btn-primary.gradient.active, .open > .dropdown-toggle.btn-primary {
+  border-radius: 24px;
+  background: -moz-linear-gradient(top,  #66b2cc 50%, #33a6cc 50%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#66b2cc), color-stop(50%,#33a6cc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #66b2cc 50%,#33a6cc 50%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #66b2cc 50%,#33a6cc 50%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #66b2cc 50%,#33a6cc 50%); /* IE10+ */
+	background: linear-gradient(to bottom,  #66b2cc 50%,#33a6cc 50%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66b2cc', endColorstr='#33a6cc',GradientType=0 ); /* IE6-9 */
+}
+
+.btn.gradient:active, .btn-primary.gradient.active {
+  border-radius: 24px;
+  background: -moz-linear-gradient(top,  #267c99 50%, #007299 50%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#267c99), color-stop(50%,#007299)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #267c99 50%,#007299 50%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #267c99 50%,#007299 50%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #267c99 50%,#007299 50%); /* IE10+ */
+	background: linear-gradient(to bottom,  #267c99 50%,#007299 50%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#267c99', endColorstr='#007299',GradientType=0 ); /* IE6-9 */
+}
+
+/* For iPad 9.7 inch screen */
+.blocklyHorizontalTree{
+  padding-left: 1px !important;
+}
+/* For iPad 9.7 inch screen */
